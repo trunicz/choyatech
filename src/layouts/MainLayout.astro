@@ -1,21 +1,57 @@
 ---
-import Header from "@/components/layout/Header"
-const { title } = Astro.props
+import Header from "@/components/layout/Header";
+const { title, description, keywords, author, canonicalUrl } = Astro.props;
 ---
+
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vibur&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vibur&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content={author} />
     <meta name="generator" content={Astro.generator} />
-    <title>{ title }</title>
-  </head >
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content="/path/to/your-image.jpg" />
+    <!-- Ajusta el path según tu imagen -->
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="/BackImage.png" />
+    <!-- Ajusta el path según tu imagen -->
+    <meta name="twitter:site" content="@MrTrunix" />
+    <!-- Ajusta tu Twitter handle -->
+
+    <title>{title}</title>
+  </head>
   <body class="pt-8">
-    <Header/>
+    <Header />
     <slot />
   </body>
 </html>

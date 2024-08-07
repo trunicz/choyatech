@@ -16,16 +16,17 @@ const Footer = () => {
             <img
               className="w-12 hidden sm:block"
               src="/choyatechwhite.svg"
-              alt="noicon"
+              alt="Choya.Tech Logo"
             />
             <h1 className="font-header text-4xl">Choya.Tech</h1>
           </div>
-          <h6 className="mt-6 font-bold">Follow us:</h6>
+          <h6 className="mt-6 font-bold">Síguenos:</h6>
           <div className="flex gap-2 mt-2">
             <Button
               size="icon"
               variant="ghost"
               className="bg-white/25 p-2 rounded-xl"
+              aria-label="LinkedIn"
             >
               <Linkedin size={16} />
             </Button>
@@ -33,6 +34,7 @@ const Footer = () => {
               size="icon"
               variant="ghost"
               className="bg-white/25 p-2 rounded-xl"
+              aria-label="Facebook"
             >
               <Facebook size={16} />
             </Button>
@@ -40,6 +42,7 @@ const Footer = () => {
               size="icon"
               variant="ghost"
               className="bg-white/25 p-2 rounded-xl"
+              aria-label="Instagram"
             >
               <Instagram size={16} />
             </Button>
@@ -47,6 +50,7 @@ const Footer = () => {
               size="icon"
               variant="ghost"
               className="bg-white/25 p-2 rounded-xl"
+              aria-label="Twitter"
             >
               <Twitter size={16} />
             </Button>
@@ -54,53 +58,34 @@ const Footer = () => {
               size="icon"
               variant="ghost"
               className="bg-white/25 p-2 rounded-xl"
+              aria-label="Contacto"
             >
               <HandMetal size={16} />
             </Button>
           </div>
         </section>
-        <section className="flex-1 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-4 py-11">
+        <section className="flex-1 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-11">
           <div>
-            <h4 className="text-xl font-bold">About</h4>
+            <h4 className="text-xl font-bold">Acerca de</h4>
             <ul className="mt-12">
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
-                  Company
+                  Compañía
                 </Button>
               </li>
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
-                  Leadership
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="px-0 text-white/65 text-md">
-                  Jobs - HIRING!
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="px-0 text-white/65 text-md">
-                  Pricing
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="px-0 text-white/65 text-md">
-                  Press
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="px-0 text-white/65 text-md">
-                  Investors
+                  Precios
                 </Button>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-xl font-bold">Cases</h4>
+            <h4 className="text-xl font-bold">Casos</h4>
             <ul className="mt-12">
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
-                  Education
+                  Educación
                 </Button>
               </li>
               <li>
@@ -110,18 +95,18 @@ const Footer = () => {
               </li>
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
-                  Management
+                  Gestión
                 </Button>
               </li>
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
-                  Local Business
+                  Negocios Locales
                 </Button>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-xl font-bold">Resources</h4>
+            <h4 className="text-xl font-bold">Recursos</h4>
             <ul className="mt-12">
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
@@ -130,37 +115,27 @@ const Footer = () => {
               </li>
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
-                  Help Center
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="px-0 text-white/65 text-md">
-                  Library
+                  Centro de Ayuda
                 </Button>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-xl font-bold">Terms and conditions</h4>
+            <h4 className="text-xl font-bold">Términos y Condiciones</h4>
             <ul className="mt-12">
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
-                  Terms and Conditions
+                  Términos y Condiciones
                 </Button>
               </li>
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
-                  Accessibility policy
+                  Política de Accesibilidad
                 </Button>
               </li>
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
-                  US Privacy Laws
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="px-0 text-white/65 text-md">
-                  Privacy Policy
+                  Política de Privacidad
                 </Button>
               </li>
             </ul>
@@ -169,7 +144,7 @@ const Footer = () => {
       </div>
       <div className="container">
         <p className="container text-white/50">
-          Copyright © 2024, ChoyaTech All rights reserved.
+          Copyright © 2024, ChoyaTech. Todos los derechos reservados.
         </p>
       </div>
     </footer>
