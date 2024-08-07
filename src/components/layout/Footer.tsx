@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white pt-16">
       <div className="container flex flex-col sm:flex-row items-center sm:items-start gap-16">
-        <section className="h-full w-fit flex flex-col justify-start items-start container py-12">
+        <section className="h-full w-fit flex flex-col justify-start items-start py-12">
           <div className="flex items-center gap-4">
             <img
               className="w-12 hidden sm:block"

@@ -11,7 +11,9 @@ const LowHero = () => {
           ¿Listo para llevar tu negocio al siguiente nivel?
         </h1>
         <Button variant="default" className="w-fit" size="lg">
-          ¡Contáctanos Hoy!
+          <a href="mailto:contactochoyatech@gmail.com" className="flex">
+            ¡Contáctanos Hoy!
+          </a>
         </Button>
       </div>
     </main>

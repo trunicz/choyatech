@@ -4,9 +4,6 @@ const Facts = () => {
   return (
     <section className="bg-amber-400 text-neutral-950 py-12" id="facts">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-extrabold text-center mb-8">
-          Datos Clave
-        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
           <div className="flex flex-col items-center">
             <MousePointerClick
