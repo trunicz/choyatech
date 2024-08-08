@@ -17,7 +17,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['montserrat', 'sans-serif'],
+      sans: ['Montserrat', 'sans-serif'],
       header: ["Vibur", "sans-serif"]
     },
     extend: {
