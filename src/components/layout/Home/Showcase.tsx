@@ -8,8 +8,8 @@ import {
 
 const Showcase = () => {
   return (
-    <main className="bg-gray-100">
-      <div className="container text-center py-12" id="who-is-for">
+    <main className="bg-gray-100" id="who-is-for">
+      <div className="container text-center py-12">
         <h3 className="text-3xl font-extrabold text-neutral-800">
           ¿Para quién es ChoyaTech?
         </h3>

@@ -9,7 +9,11 @@ const { title, description, keywords, author, canonicalUrl } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://choya.tech/favicon.ico"
+    />
     <title>{title}</title>
 
     <!-- SEO Meta Tags -->
@@ -32,7 +36,32 @@ const { title, description, keywords, author, canonicalUrl } = Astro.props;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="/BackImage.png" />
-    <meta name="twitter:site" content="@MrTrunix" />
+
+    <!-- Schema Markup JSON-LD -->
+    <script is:inline type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ChoyaTech",
+        "image": "https://choya.tech/favicon.png",
+        "@id": "https://choya.tech",
+        "url": "https://choya.tech",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "La Paz",
+          "addressRegion": "Baja California sur",
+          "postalCode": "23075",
+          "addressCountry": "Mexico"
+        },
+        "priceRange": "$$$",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      }
+    </script>
   </head>
   <body class="pt-8">
     <Header />

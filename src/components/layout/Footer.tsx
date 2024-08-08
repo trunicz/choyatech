@@ -13,12 +13,7 @@ const Footer = () => {
       <div className="container flex flex-col sm:flex-row items-center sm:items-start gap-16">
         <section className="h-full w-fit flex flex-col justify-start items-start py-12">
           <div className="flex items-center gap-4">
-            <img
-              className="w-12 hidden sm:block"
-              src="/choyatechwhite.svg"
-              alt="Choya.Tech Logo"
-            />
-            <h1 className="font-header text-4xl">Choya.Tech</h1>
+            <h3 className="font-header text-4xl">Choya.Tech</h3>
           </div>
           <h6 className="mt-6 font-bold">Síguenos:</h6>
           <div className="flex gap-2 mt-2">

@@ -6,13 +6,13 @@ export default function Header() {
     <header className="container flex items-center pt-8">
       <div>
         <a
-          href="/"
+          href="https://choya.tech/"
           className="flex gap-4 items-center"
           aria-label="Choya.Tech Home"
         >
-          <h1 className="font-header text-4xl hover:underline text-purple-500">
+          <h3 className="font-header text-4xl hover:underline text-purple-500">
             Choya.Tech
-          </h1>
+          </h3>
         </a>
       </div>
       <div className="ms-auto flex items-center">
@@ -21,22 +21,26 @@ export default function Header() {
             <ul className="flex">
               <li>
                 <Button asChild className="text-black/60" variant="link">
-                  <a href="#who-is-for">¿Para quién es?</a>
+                  <a href="https://choya.tech/#who-is-for">¿Para quién es?</a>
                 </Button>
               </li>
               <li>
                 <Button asChild className="text-black/60" variant="link">
-                  <a href="#blog">Blog</a>
+                  <a href="https://choya.tech/#blog">Blog</a>
                 </Button>
               </li>
               <li>
                 <Button asChild className="text-black/60" variant="link">
-                  <a href="#how-does-it-work">¿Cómo funciona?</a>
+                  <a href="https://choya.tech/#how-does-it-work">
+                    ¿Cómo funciona?
+                  </a>
                 </Button>
               </li>
               <li>
                 <Button asChild className="text-black/60" variant="link">
-                  <a href="#our-customers">Nuestros Clientes</a>
+                  <a href="https://choya.tech/#our-customers">
+                    Nuestros Clientes
+                  </a>
                 </Button>
               </li>
             </ul>
