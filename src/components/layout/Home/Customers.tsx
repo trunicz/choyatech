@@ -26,7 +26,7 @@ const Customers = () => {
             <BadgeCheck />
           </div>
           <p>
-            Trabajar con ChoyaTech ha sido una experiencia transformadora para
+            Trabajar con Choya Tech ha sido una experiencia transformadora para
             nuestra tienda en línea.
           </p>
           <span className="font-bold mt-5"> - Laura Gómez</span>
@@ -46,7 +46,7 @@ const Customers = () => {
             <BadgeCheck />
           </div>
           <p>
-            El equipo de ChoyaTech superó nuestras expectativas en todos los
+            El equipo de Choya Tech superó nuestras expectativas en todos los
             aspectos.
           </p>
           <span className="font-bold mt-5"> - Miguel Rodríguez</span>

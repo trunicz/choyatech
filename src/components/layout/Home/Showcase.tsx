@@ -11,7 +11,7 @@ const Showcase = () => {
     <main className="bg-gray-100" id="who-is-for">
       <div className="container text-center py-12">
         <h3 className="text-3xl font-extrabold text-neutral-800">
-          ¿Para quién es ChoyaTech?
+          ¿Que Hacemos en Choya Tech?
         </h3>
         <hr className="w-24 h-2 mx-auto my-2 bg-blue-500 border-0 dark:bg-blue-300" />
       </div>

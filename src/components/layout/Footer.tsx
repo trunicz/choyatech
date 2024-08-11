@@ -139,7 +139,7 @@ const Footer = () => {
       </div>
       <div className="container">
         <p className="container text-white/50">
-          Copyright © 2024, ChoyaTech. Todos los derechos reservados.
+          Copyright © 2024, Choya Tech. Todos los derechos reservados.
         </p>
       </div>
     </footer>

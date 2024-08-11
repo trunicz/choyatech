@@ -3,7 +3,7 @@ const Process = () => {
     <div className="pb-12" id="how-does-it-work">
       <div className="lg:container text-center py-12">
         <h3 className="text-3xl font-extrabold text-neutral-800">
-          ¿Cómo funciona ChoyaTech?
+          ¿Cómo funciona Choya Tech?
         </h3>
         <hr className="w-24 h-2 mx-auto my-2 bg-blue-500 border-0 dark:bg-blue-300" />
       </div>
