@@ -38,6 +38,9 @@ const { title, description, keywords, author, canonicalUrl } = Astro.props;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="/BackImage.png" />
 
+    <!-- Site Map -->
+    <link rel="sitemap" href="https://choya.tech/sitemap-index.xml" />
+
     <!-- Schema Markup JSON-LD -->
     <script is:inline type="application/ld+json">
       {
