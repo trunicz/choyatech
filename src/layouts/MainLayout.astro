@@ -49,17 +49,25 @@ const { title, description, keywords, author, canonicalUrl } = Astro.props;
         "url": "https://choya.tech",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "La Paz",
-          "addressRegion": "Baja California sur",
+          "streetAddress": "La Paz, 23075, Baja California Sur",
+          "addressLocality": " La Paz",
+          "addressRegion": "Baja California Sur",
           "postalCode": "23075",
-          "addressCountry": "Mexico"
+          "addressCountry": "México"
         },
-        "priceRange": "$$$",
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "09:00",
-          "closes": "18:00"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "24.157176292335304",
+          "longitude": "-110.32067658244175"
+        },
+        "hasMap": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d910.1040933763386!2d-110.32131763038828!3d24.15712612230954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDA5JzI1LjciTiAxMTDCsDE5JzE0LjQiVw!5e0!3m2!1ses-419!2smx!4v1723383903875!5m2!1ses-419!2smx",
+        "openingHours": "Mo, Tu, We, Th, Fr, Sa, Su 09:00-20:00",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+526131170683",
+          "contactType": "general",
+          "email": "contacto@choya.tech",
+          "availableLanguage": ["Spanish", "English"]
         }
       }
     </script>
