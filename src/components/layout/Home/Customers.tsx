@@ -10,7 +10,7 @@ const Customers = () => {
         </h3>
         <hr className="w-24 h-2 mx-auto my-2 bg-white border-0 dark:bg-white" />
       </div>
-      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center text-white">
+      <div className="container grid grid-cols-1  gap-16 items-center text-white">
         <div className="flex flex-col ms-auto items-center text-center mx-auto">
           <Avatar className="w-20 h-20">
             <AvatarImage
@@ -22,16 +22,16 @@ const Customers = () => {
             </AvatarFallback>
           </Avatar>
           <div className="flex items-center gap-2">
-            <h4 className="font-bold my-4 text-2xl">Moda E-commerce</h4>
+            <h4 className="font-bold my-4 text-2xl">ElCalifornio</h4>
             <BadgeCheck />
           </div>
-          <p>
+          <p className="lg:w-3/4">
             Trabajar con Choya Tech ha sido una experiencia transformadora para
-            nuestra tienda en línea.
+            nuestro negocio, superó nuestras expectativas en todos los aspectos.
           </p>
-          <span className="font-bold mt-5"> - Laura Gómez</span>
+          <span className="font-bold mt-5"> - Anónimo</span>
         </div>
-        <div className="flex flex-col me-auto items-center text-center mx-auto">
+        {/* <div className="flex flex-col me-auto items-center text-center mx-auto">
           <Avatar className="w-20 h-20">
             <AvatarImage
               src="https://randomuser.me/api/portraits/men/7.jpg"
@@ -50,7 +50,7 @@ const Customers = () => {
             aspectos.
           </p>
           <span className="font-bold mt-5"> - Miguel Rodríguez</span>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -53,7 +53,7 @@ const Blog = () => {
     <main className="min-h-[calc(100vh-22rem)]" id="blog">
       <div className="container text-center py-12">
         <h3 className="text-3xl font-extrabold text-neutral-800">
-          Stay informed with us
+          Mantente Informado con Choya Tech
         </h3>
         <hr className="w-24 h-2 mx-auto my-2 bg-blue-500 border-0 dark:bg-blue-300" />
       </div>

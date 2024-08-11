@@ -2,13 +2,16 @@ const Process = () => {
   return (
     <div className="pb-12" id="how-does-it-work">
       <div className="lg:container text-center py-12">
-        <h3 className="text-3xl font-extrabold text-neutral-800">
-          ¿Cómo funciona Choya Tech?
+        <h3 className="text-3xl font-extrabold grid text-neutral-800">
+          ¿Cómo Funciona Choya Tech?
+          <span className="text-base font-normal">
+            Procesos de Desarrollo Web y Software
+          </span>
         </h3>
         <hr className="w-24 h-2 mx-auto my-2 bg-blue-500 border-0 dark:bg-blue-300" />
       </div>
       <div className="flex flex-col mx-auto md:container gap-6">
-        <div className="flex justify-center mx-auto md:container">
+        <div className="flex justify-center mx-auto md:container mb-8">
           <div className="w-1/2 hidden lg:flex lg:mt-0 justify-center">
             <img
               src="/miroodles_2.png"
@@ -17,7 +20,7 @@ const Process = () => {
           </div>
           <div className="lg:w-1/2 mx-auto container flex flex-col justify-center gap-4">
             <h3 className="text-3xl font-extrabold text-neutral-800">
-              Análisis y Planificación
+              Análisis y Planificación Personalizada
             </h3>
             <p className="text-xl lg:w-4/5">
               Comenzamos con una consulta detallada para entender tus
@@ -27,10 +30,10 @@ const Process = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center mx-auto md:container">
+        <div className="flex justify-center mx-auto md:container mb-8">
           <div className="lg:w-1/2 mx-auto container flex flex-col justify-center gap-4">
             <h3 className="text-3xl font-extrabold text-neutral-800">
-              Desarrollo y Ejecución
+              Desarrollo de Software y Ejecución Eficiente
             </h3>
             <p className="text-xl lg:w-4/5">
               Nuestro equipo de expertos desarrolla y ejecuta la solución de
@@ -47,7 +50,7 @@ const Process = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center mx-auto md:container">
+        <div className="flex justify-center mx-auto md:container mb-8">
           <div className="w-1/2 hidden lg:flex lg:mt-0 justify-center">
             <img
               src="/miroodles_4.png"
@@ -56,7 +59,7 @@ const Process = () => {
           </div>
           <div className="lg:w-1/2 mx-auto container flex flex-col justify-center gap-4">
             <h3 className="text-3xl font-extrabold text-neutral-800">
-              Pruebas y Lanzamiento
+              Pruebas Rigurosas y Lanzamiento Exitoso
             </h3>
             <p className="text-xl lg:w-4/5">
               Realizamos pruebas exhaustivas para asegurar la calidad del

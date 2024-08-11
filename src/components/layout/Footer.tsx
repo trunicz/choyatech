@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container flex flex-col sm:flex-row items-center sm:items-start gap-16">
         <section className="h-full w-fit flex flex-col justify-start items-start py-12">
           <div className="flex items-center gap-4">
-            <h3 className="font-header text-4xl">Choya.Tech</h3>
+            <span className="font-header text-4xl">Choya.Tech</span>
           </div>
           <h6 className="mt-6 font-bold">Síguenos:</h6>
           <div className="flex gap-2 mt-2">
@@ -60,9 +60,9 @@ const Footer = () => {
           </div>
         </section>
         <section className="flex-1 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-11">
-          <div>
+          <div className="mb-12">
             <h4 className="text-xl font-bold">Acerca de</h4>
-            <ul className="mt-12">
+            <ul className="md:mt-12">
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
                   Compañía
@@ -75,9 +75,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="mb-12">
             <h4 className="text-xl font-bold">Casos</h4>
-            <ul className="mt-12">
+            <ul className="md:mt-12">
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
                   Educación
@@ -100,9 +100,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="mb-12">
             <h4 className="text-xl font-bold">Recursos</h4>
-            <ul className="mt-12">
+            <ul className="md:mt-12">
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
                   Blog
@@ -115,9 +115,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="mb-12">
             <h4 className="text-xl font-bold">Términos y Condiciones</h4>
-            <ul className="mt-12">
+            <ul className="md:mt-12">
               <li>
                 <Button variant="link" className="px-0 text-white/65 text-md">
                   Términos y Condiciones

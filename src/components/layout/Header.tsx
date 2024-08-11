@@ -10,9 +10,9 @@ export default function Header() {
           className="flex gap-4 items-center"
           aria-label="Choya.Tech Home"
         >
-          <h3 className="font-header text-4xl hover:underline text-purple-500">
+          <span className="font-header text-4xl hover:underline text-purple-500">
             Choya.Tech
-          </h3>
+          </span>
         </a>
       </div>
       <div className="ms-auto flex items-center">
