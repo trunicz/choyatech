@@ -7,7 +7,5 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://choya.tech',
-  integrations: [react(), tailwind({
-    applyBaseStyles: false
-  }), sitemap()]
+  integrations: [react(), tailwind(), sitemap()]
 });

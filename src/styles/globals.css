@@ -5,15 +5,11 @@
 @font-face {
   font-family: "Vibur";
   src: url("/Vibur-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
   src: url("/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 html {
@@ -21,6 +17,10 @@ html {
 }
 
 *::selection {
-  background: #fff045;
-  color: rgb(58, 39, 9);
+  background: #ff4555;
+  color: rgb(255, 255, 255);
 }
+
+/* * {
+  border: red solid 1px;
+} */
