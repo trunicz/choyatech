@@ -35,8 +35,8 @@ const Showcase = () => {
           </div>
           <h4 className="text-xl font-bold">E-Commerce</h4>
           <p className="text-gray-500">
-            Ponemos tu negocio en línea y diversificamos tus ingresos con una
-            tienda abierta 24/7.
+            Diseño de páginas web, ponemos tu negocio en línea y diversificamos
+            tus ingresos con una tienda abierta 24/7.
           </p>
           <Button variant="link" className="px-0">
             Leer más
@@ -61,8 +61,9 @@ const Showcase = () => {
           </div>
           <h4 className="text-xl font-bold">Negocios Locales</h4>
           <p className="text-gray-500">
-            Posicionamos tu marca en los primeros resultados de búsqueda y
-            desarrollamos aplicaciones web para tu negocio.
+            Desarrollo de páginas web y posicionamiento tu marca en los primeros
+            resultados de búsqueda y desarrollamos aplicaciones web para tu
+            negocio.
           </p>
           <Button variant="link" className="px-0">
             Leer más

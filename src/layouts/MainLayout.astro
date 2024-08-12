@@ -76,7 +76,7 @@ const { title, description, keywords, author, canonicalUrl } = Astro.props;
     </script>
   </head>
   <body class="pt-8">
-    <Header />
+    <Header client:visible />
     <slot />
   </body>
 </html>

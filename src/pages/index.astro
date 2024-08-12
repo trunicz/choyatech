@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Blog from "@/components/layout/Home/Blog";
 import Customers from "@/components/layout/Home/Customers";
 import Facts from "@/components/layout/Home/Facts";
+import Faq from "@/components/layout/Home/Faq";
 import Hero from "@/components/layout/Home/Hero";
 import LowHero from "@/components/layout/Home/LowHero";
 import Process from "@/components/layout/Home/Process";
@@ -10,10 +11,9 @@ import Showcase from "@/components/layout/Home/Showcase";
 import MainLayout from "@/layouts/MainLayout.astro";
 import "@/styles/globals.css";
 
-const title =
-  "Choya Tech - Diseño de páginas web en Baja California Sur - Soluciones Personalizadas para Tu Negocio";
+const title = "Choya Tech - Diseño de páginas web en Baja California Sur";
 const description =
-  "En Choya Tech, somos una agencia de desarrollo y diseño web en Baja California Sur, especializada en crear soluciones personalizadas para mejorar la presencia en línea de tu negocio. Ofrecemos desarrollo de páginas web a medida para negocios locales, ayudándote a atraer más clientes y llevar el control de tus operaciones de manera eficiente. Ya sea que necesites crear una página web desde cero, mejorar una existente, o buscar un programa para gestionar tu negocio, en Choya Tech tenemos la experiencia y las herramientas para llevar tu empresa al siguiente nivel. ¡Descubre cómo podemos ayudarte hoy mismo";
+  "Somos una agencia de desarrollo y diseño web en Baja California Sur, especializada en crear soluciones personalizadas para mejorar la presencia en línea.";
 const keywords =
   "Pagina web para mi negocio, Desarrollo web en Baja California Sur, Como crear una pagina web para mi negocio, Páginas web para negocios locales, crear pagina web gratis para negocio, Desarrollo de páginas web precio, agencia de paginas web, wix creador de paginas web, programa para llevar el control de mi negocio, empresas de desarrollo web, desarrollos web";
 const author = "Choya Tech";
@@ -21,12 +21,13 @@ const canonicalUrl = "https://choya.tech";
 ---
 
 <MainLayout {title} {description} {keywords} {author} {canonicalUrl}>
-  <Hero />
+  <Hero client:visible />
   <Showcase />
   <Blog />
   <Facts />
   <Process />
   <Customers />
   <LowHero />
+  <Faq client:visible />
   <Footer />
 </MainLayout>
