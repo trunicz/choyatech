@@ -71,7 +71,9 @@ const Showcase = () => {
         </div>
       </div>
       <div className="container text-center mt-12 pb-12">
-        <Button className="">¡Contáctanos Ahora!</Button>
+        <Button className="">
+          <a href="#contacto">¡Contáctanos Ahora!</a>
+        </Button>
       </div>
     </main>
   );

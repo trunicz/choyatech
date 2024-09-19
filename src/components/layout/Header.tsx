@@ -58,7 +58,7 @@ export default function Header() {
           </nav>
         </div>
         <div className="ms-auto block md:hidden">
-          <Drawer>
+          {/* <Drawer>
             <DrawerTrigger>
               <Button variant="outline">
                 <Menu />
@@ -109,7 +109,7 @@ export default function Header() {
                 </DrawerDescription>
               </DrawerHeader>
             </DrawerContent>
-          </Drawer>
+          </Drawer> */}
         </div>
       </div>
     </header>

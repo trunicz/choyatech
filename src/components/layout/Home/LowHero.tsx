@@ -11,7 +11,7 @@ const LowHero = () => {
           ¿Listo para Llevar Tu Negocio al Siguiente Nivel con Choya Tech?
         </h2>
         <Button variant="default" className="w-fit" size="lg">
-          <a href="mailto:contactochoyatech@gmail.com" className="flex">
+          <a href="/#contacto" className="flex">
             ¡Contáctanos Hoy!
           </a>
         </Button>
