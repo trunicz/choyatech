@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="SEO y Posicionamiento | choya.tech">
+  <Header />
+  <main class="pt-20">
+    <section class="bg-gray-900 text-white py-20 relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-emerald-900 to-green-900 opacity-90"
+      >
+      </div>
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <span
+          class="inline-block py-1 px-3 rounded-full bg-white/10 text-white text-sm font-semibold mb-4 backdrop-blur-sm"
+          >Google First Page</span
+        >
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          SEO y Posicionamiento Web
+        </h1>
+        <p class="text-xl text-emerald-100 max-w-2xl">
+          Aparece cuando tus clientes te buscan. Optimizamos tu sitio web para
+          conquistar los primeros lugares de Google orgánicamente.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div
+            class="order-2 md:order-1 bg-gray-100 rounded-2xl p-8 h-96 relative overflow-hidden group"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-bl from-emerald-50 to-white opacity-50"
+            >
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?auto=format&fit=crop&q=80&w=800"
+              alt="SEO Optimization"
+              class="relative z-10 w-full h-full object-cover rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="order-1 md:order-2">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              La importancia de ser el #1
+            </h2>
+            <div class="prose prose-lg text-gray-600">
+              <p class="mb-4">
+                El 75% de los usuarios nunca pasan a la segunda página de
+                Google. Si tu empresa no está en la cima, estás perdiendo miles
+                de oportunidades de venta diarias frente a tu competencia.
+              </p>
+              <p class="mb-4">
+                El SEO (Search Engine Optimization) no solo trae tráfico, trae <strong
+                  >tráfico cualificado</strong
+                >. Son personas que ya tienen una intención de compra activa. Es
+                la inversión más rentable a largo plazo.
+              </p>
+              <ul class="space-y-4 mt-8">
+                <li class="flex items-start">
+                  <span class="text-secondary mr-2">✓</span>
+                  <span
+                    ><strong>Autoridad de Marca:</strong> Estar primero genera confianza
+                    inmediata.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-secondary mr-2">✓</span>
+                  <span
+                    ><strong>Tráfico Gratuito:</strong> Reduce tu dependencia de anuncios
+                    pagados.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-secondary mr-2">✓</span>
+                  <span
+                    ><strong>Experiencia de Usuario:</strong> Un buen SEO implica
+                    una web rápida y fácil de usar.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mt-8">
+              <a
+                href="/#contacto"
+                class="inline-flex items-center justify-center px-6 py-3 bg-secondary text-white rounded-lg hover:bg-emerald-600 transition-colors font-medium"
+              >
+                Quiero estar en Google
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

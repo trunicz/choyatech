@@ -1,0 +1,83 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const cases = [
+  {
+    client: "Inmobiliaria Elsa Properties",
+    result: "+240% Leads",
+    desc: "Estrategia de marketing digital y campañas segmentadas.",
+    img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    client: "Multiestructuras El Californio",
+    result: "Manejo de Inventario",
+    desc: "Software de inventario y CRM.",
+    img: "https://images.unsplash.com/photo-1577553792056-a5908487a9f6?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    client: "Clínica Dental Sonrisas",
+    result: "#1 en Google",
+    desc: "Rediseño web y estrategia SEO local agresiva.",
+    img: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800",
+  },
+];
+---
+
+<Layout title="Casos de Éxito | choya.tech">
+  <Header />
+  <main class="pt-20">
+    <section class="bg-dark text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Resultados Reales</h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+          No vendemos humo, vendemos crecimiento. Aquí una muestra de lo que
+          hemos logrado con nuestros socios comerciales.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          {
+            cases.map(c => (
+              <div class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group">
+                <div class="h-48 overflow-hidden">
+                  <img
+                    src={c.img}
+                    alt={c.client}
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="text-sm font-bold text-primary mb-2 uppercase tracking-wide">
+                    {c.client}
+                  </div>
+                  <div class="text-2xl font-bold text-gray-900 mb-4">
+                    {c.result}
+                  </div>
+                  <p class="text-gray-600">{c.desc}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="mt-20 text-center">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">
+            ¿Quieres ser nuestro próximo caso de éxito?
+          </h3>
+          <a
+            href="/#contacto"
+            class="inline-flex items-center justify-center px-8 py-4 bg-dark text-white rounded-full hover:bg-gray-800 transition-all shadow-xl hover:scale-105"
+          >
+            Empezar Proyecto
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

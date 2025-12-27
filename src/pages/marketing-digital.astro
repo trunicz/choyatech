@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Marketing Digital | choya.tech">
+  <Header />
+  <main class="pt-20">
+    <section class="bg-gray-900 text-white py-20 relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-violet-900 to-indigo-900 opacity-90"
+      >
+      </div>
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <span
+          class="inline-block py-1 px-3 rounded-full bg-white/10 text-white text-sm font-semibold mb-4 backdrop-blur-sm"
+          >Crecimiento Acelerado</span
+        >
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Marketing Digital Estratégico
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl">
+          No busques clientes, deja que ellos te encuentren. Creamos embudos de
+          venta y campañas publicitarias que maximizan tu retorno de inversión.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              ¿Por qué es vital para tu empresa?
+            </h2>
+            <div class="prose prose-lg text-gray-600">
+              <p class="mb-4">
+                En la era actual, si no estás en internet, no existes. Pero
+                estar no es suficiente; necesitas destacar. El Marketing Digital
+                no es un gasto, es el motor de ventas más potente de tu negocio.
+              </p>
+              <p class="mb-4">
+                Permite segmentar a tu audiencia con precisión láser, asegurando
+                que cada peso invertido vaya dirigido a personas realmente
+                interesadas en tu producto. A diferencia de la publicidad
+                tradicional, aquí todo es medible.
+              </p>
+              <ul class="space-y-4 mt-8">
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">✓</span>
+                  <span
+                    ><strong>Alcance Global:</strong> Rompe las barreras geográficas.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">✓</span>
+                  <span
+                    ><strong>Medición Exacta:</strong> Conoce el ROI de cada campaña
+                    en tiempo real.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">✓</span>
+                  <span
+                    ><strong>Fidelización:</strong> Crea relaciones duraderas con
+                    tus clientes.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mt-8">
+              <a
+                href="/#contacto"
+                class="inline-flex items-center justify-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors font-medium"
+              >
+                Solicitar Auditoría Gratuita
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-gray-100 rounded-2xl p-8 h-96 relative overflow-hidden group"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-gray-200 to-white opacity-50"
+            >
+            </div>
+            <!-- Decorative Abstract visuals -->
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary/20 rounded-full blur-3xl group-hover:bg-primary/30 transition-all duration-700"
+            >
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+              alt="Marketing Analytics"
+              class="relative z-10 w-full h-full object-cover rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

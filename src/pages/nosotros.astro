@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Sobre Nosotros | choya.tech">
+  <Header />
+  <main class="pt-20">
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Nuestra Misión
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Empoderar a las empresas mexicanas con la tecnología y estrategias
+          digitales que necesitan para competir en un mercado global.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div
+            class="bg-gray-100 rounded-2xl p-8 h-[500px] relative overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+              alt="Team working"
+              class="relative z-10 w-full h-full object-cover rounded-xl shadow-lg"
+            />
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              ¿Quiénes somos?
+            </h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              En <strong>choya.tech</strong>, somos un equipo multidisciplinario
+              de desarrolladores, diseñadores, estrategas y creadores de
+              contenido apasionados por el crecimiento empresarial.
+            </p>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Nacimos con la idea de que la tecnología de punta no debería ser
+              exclusiva de las grandes corporaciones. Creemos en democratizar el
+              acceso al marketing digital de alto nivel y al desarrollo de
+              software a medida.
+            </p>
+
+            <h3 class="text-xl font-bold text-gray-900 mt-8 mb-4">
+              Nuestros Valores
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 bg-gray-50 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">Transparencia</h4>
+                <p class="text-sm text-gray-500">
+                  Hablamos claro, sin tecnicismos innecesarios.
+                </p>
+              </div>
+              <div class="p-4 bg-gray-50 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">Innovación</h4>
+                <p class="text-sm text-gray-500">
+                  Siempre buscamos la mejor solución, no la más fácil.
+                </p>
+              </div>
+              <div class="p-4 bg-gray-50 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">Resultados</h4>
+                <p class="text-sm text-gray-500">
+                  Nos enfocamos en métricas que importan: tus ventas.
+                </p>
+              </div>
+              <div class="p-4 bg-gray-50 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">Compromiso</h4>
+                <p class="text-sm text-gray-500">
+                  Tu proyecto es nuestro proyecto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,82 @@
+---
+const services = [
+  {
+    title: "Posicionamiento SEO",
+    description: "Mejoramos tu visibilidad en Google para que tus clientes te encuentren primero.",
+    icon: "search",
+    color: "bg-blue-100 text-blue-600",
+    link: "/seo"
+  },
+  {
+    title: "Marketing Digital",
+    description: "Estrategias completas para aumentar tus ventas y reconocimiento de marca.",
+    icon: "chart",
+    color: "bg-purple-100 text-purple-600",
+    link: "/marketing-digital"
+  },
+  {
+    title: "Redes Sociales",
+    description: "Gestión profesional de tus redes para crear una comunidad leal y activa.",
+    icon: "share",
+    color: "bg-pink-100 text-pink-600",
+    link: "/redes-sociales"
+  },
+  {
+    title: "Creación de Contenido",
+    description: "Fotografía, video y diseño gráfico de alta calidad que conecta con tu audiencia.",
+    icon: "camera",
+    color: "bg-orange-100 text-orange-600",
+    link: "/creacion-contenido"
+  },
+  {
+    title: "Desarrollo de Apps",
+    description: "Aplicaciones internas y plataformas web para optimizar tus procesos operativos.",
+    icon: "code",
+    color: "bg-green-100 text-green-600",
+    link: "/desarrollo-apps"
+  },
+  {
+    title: "Automatización",
+    description: "Implementamos herramientas para automatizar tareas repetitivas y ahorrar tiempo.",
+    icon: "cpu",
+    color: "bg-indigo-100 text-indigo-600",
+    link: "/desarrollo-apps"
+  }
+];
+---
+
+<section id="servicios" class="py-24 bg-white relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-base font-semibold text-primary uppercase tracking-wide">Nuestros Servicios</h2>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        Soluciones integrales para tu negocio
+      </p>
+      <p class="mt-4 text-xl text-gray-500">
+        Todo lo que necesitas para crecer en el mundo digital, bajo un mismo techo.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map((service) => (
+        <a href={service.link} class="group relative p-8 bg-white border border-gray-100 rounded-3xl hover:shadow-xl transition-all duration-300 block hover:-translate-y-1">
+          <div class={`inline-flex items-center justify-center p-3 rounded-2xl ${service.color} mb-6`}>
+            <!-- Icons placeholder -->
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {service.icon === 'search' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />}
+                {service.icon === 'chart' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />}
+                {service.icon === 'share' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />}
+                {service.icon === 'camera' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />}
+                {service.icon === 'code' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />}
+                {service.icon === 'cpu' && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />}
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
+          <p class="text-gray-500 leading-relaxed">
+            {service.description}
+          </p>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Redes Sociales | choya.tech">
+  <Header />
+  <main class="pt-20">
+    <section class="bg-gray-900 text-white py-20 relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-pink-900 to-rose-900 opacity-90"
+      >
+      </div>
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <span
+          class="inline-block py-1 px-3 rounded-full bg-white/10 text-white text-sm font-semibold mb-4 backdrop-blur-sm"
+          >Comunidad Activa</span
+        >
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Gestión de Redes Sociales
+        </h1>
+        <p class="text-xl text-pink-100 max-w-2xl">
+          Convertimos seguidores en embajadores de marca. Creamos contenido
+          viral que conecta, emociona y vende.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              Más que solo "likes"
+            </h2>
+            <div class="prose prose-lg text-gray-600">
+              <p class="mb-4">
+                Las redes sociales son el nuevo canal de atención al cliente y
+                el escaparate principal de tu marca. Una gestión profesional no
+                solo se trata de publicar bonito, sino de construir una
+                comunidad leal.
+              </p>
+              <p class="mb-4">
+                Nos encargamos de todo: desde la estrategia creativa y el diseño
+                gráfico, hasta la programación, respuesta a comentarios y
+                análisis de métricas. Tú enfócate en tu negocio, nosotros en tu
+                imagen.
+              </p>
+              <ul class="space-y-4 mt-8">
+                <li class="flex items-start">
+                  <span class="text-pink-600 mr-2">✓</span>
+                  <span
+                    ><strong>Humanización:</strong> Dale voz y personalidad a tu empresa.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-pink-600 mr-2">✓</span>
+                  <span
+                    ><strong>Viralidad:</strong> Estrategias para Reels y TikToks
+                    que llegan a miles.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="text-pink-600 mr-2">✓</span>
+                  <span
+                    ><strong>Venta Directa:</strong> Integra catálogos en Instagram
+                    y Facebook Shops.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mt-8">
+              <a
+                href="/#contacto"
+                class="inline-flex items-center justify-center px-6 py-3 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors font-medium"
+              >
+                Gestionar mis Redes
+              </a>
+            </div>
+          </div>
+          <div
+            class="bg-gray-100 rounded-2xl p-8 h-96 relative overflow-hidden group"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-pink-100 to-white opacity-50"
+            >
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800"
+              alt="Social Media"
+              class="relative z-10 w-full h-full object-cover rounded-xl shadow-lg transform group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

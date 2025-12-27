@@ -1,0 +1,86 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Soluciones digitales integrales para tu empresa: SEO, Marketing, y Desarrollo de Apps.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | choya.tech</title>
+  </head>
+  <body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+    <slot />
+
+    <script>
+      import { gsap } from "gsap";
+      import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Header Animation
+      const header = document.querySelector("header");
+      if (header) {
+        gsap.from(header, {
+          y: -100,
+          opacity: 0,
+          duration: 1,
+          ease: "power4.out",
+        });
+      }
+
+      // Hero content generic animation (if present)
+      const heroElements = document.querySelectorAll(".hero-animate");
+      if (heroElements.length > 0) {
+        gsap.from(heroElements, {
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power3.out",
+          delay: 0.5,
+        });
+      }
+
+      // Sections scroll animation
+      const sections = document.querySelectorAll("section");
+      sections.forEach(section => {
+        gsap.fromTo(
+          section.children,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            stagger: 0.1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%", // starts when top of section hits 80% down viewport
+              toggleActions: "play none none reverse",
+            },
+          },
+        );
+      });
+    </script>
+  </body>
+</html>

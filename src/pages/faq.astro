@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const faqs = [
+  {
+    q: "¿Tengo que firmar un contrato forzoso?",
+    a: "Siempre buscamos un trato justo para los clientes. Nuestros planes de 6, 12 y 24 meses ofrecen descuentos significativos y nos dan tiempo de ofrecer un servicio de calidad.",
+  },
+  {
+    q: "¿En cuánto tiempo veré resultados?",
+    a: "Depende del servicio. Las campañas pagadas (Ads) no tardan en mostrar resultados. El SEO y el crecimiento orgánico en redes suelen tomar de 3 a 6 meses para mostrar su máximo potencial, aunque en algunos casos puede ser más rápido.",
+  },
+  {
+    q: "¿Qué incluye el desarrollo de Apps?",
+    a: "Nos encargamos de todo: desde dibujar cómo se verá tu app, construirla por dentro y por fuera, revisar que funcione perfecto y ponerla en las tiendas para que todos la puedan usar.",
+  },
+  {
+    q: "¿Puedo facturar sus servicios?",
+    a: "Sí, todos nuestros precios ya incluyen IVA y emitimos factura fiscal válida en México.",
+  },
+];
+---
+
+<Layout title="Preguntas Frecuentes | choya.tech">
+  <Header />
+  <main class="pt-20">
+    <section class="bg-gray-50 py-20">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h1 class="text-4xl font-bold text-gray-900 mb-6">
+          Preguntas Frecuentes
+        </h1>
+        <p class="text-lg text-gray-600">
+          Resolvemos tus dudas antes de empezar.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-4">
+        <div class="space-y-8">
+          {
+            faqs.map(f => (
+              <div class="border-b border-gray-100 pb-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">{f.q}</h3>
+                <p class="text-gray-600 leading-relaxed">{f.a}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
