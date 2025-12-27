@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title,
-  description = "Soluciones digitales integrales para tu empresa: SEO, Marketing, y Desarrollo de Apps.",
+  description = "ChoyaTech: Agencia de Marketing Digital y Páginas Web en Baja California Sur. Expertos en SEO, Desarrollo Web y Apps en La Paz y Los Cabos.",
   image = "/images/og-default.png", // Fallback image (user should create this)
 } = Astro.props;
 
@@ -23,21 +23,31 @@ const schema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "choya.tech",
+  alternateName: ["Choya Tech", "ChoyaTech", "Choya Tecnologia"],
   url: "https://choya.tech",
   logo: "https://choya.tech/logo.png",
   image: "https://choya.tech/images/office.jpg",
   description: description,
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Centro", // Generic central location for now
     addressCountry: "MX",
-    addressRegion: "BCS", // Inferring from 'choya' (common in Baja California Sur) or generic Mexico
-    addressLocality: "La Paz", // Placeholder
+    addressRegion: "Baja California Sur",
+    addressLocality: "La Paz",
+    postalCode: "23000",
   },
+  areaServed: [
+    "La Paz",
+    "Cabo San Lucas",
+    "San José del Cabo",
+    "Baja California Sur",
+    "México",
+  ],
   priceRange: "$$",
   telephone: "+52-55-1234-5678",
   sameAs: [
     "https://facebook.com/choyatech",
-    "https://instagram.com/choyatech",
+    "https://instagram.com/choya.tech",
     "https://linkedin.com/company/choyatech",
   ],
 });
@@ -53,6 +63,10 @@ const schema = JSON.stringify({
     <!-- SEO -->
     <title>{title} | choya.tech</title>
     <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="choyatech, choya tech, choya, paginas web la paz, diseño web bcs, desarrollo apps los cabos, agencia seo baja california sur, marketing digital la paz"
+    />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="index, follow" />
