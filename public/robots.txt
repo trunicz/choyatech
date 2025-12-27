@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://choya.tech/sitemap-index.xml

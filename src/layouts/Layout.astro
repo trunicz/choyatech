@@ -4,29 +4,83 @@ import "../styles/global.css";
 interface Props {
   title: string;
   description?: string;
+  image?: string;
 }
 
 const {
   title,
   description = "Soluciones digitales integrales para tu empresa: SEO, Marketing, y Desarrollo de Apps.",
+  image = "/images/og-default.png", // Fallback image (user should create this)
 } = Astro.props;
+
+const canonicalURL = new URL(
+  Astro.url.pathname,
+  Astro.site || "https://choya.tech",
+);
+
+// JSON-LD Schema for Local Business / Organization
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "choya.tech",
+  url: "https://choya.tech",
+  logo: "https://choya.tech/logo.png",
+  image: "https://choya.tech/images/office.jpg",
+  description: description,
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "MX",
+    addressRegion: "BCS", // Inferring from 'choya' (common in Baja California Sur) or generic Mexico
+    addressLocality: "La Paz", // Placeholder
+  },
+  priceRange: "$$",
+  telephone: "+52-55-1234-5678",
+  sameAs: [
+    "https://facebook.com/choyatech",
+    "https://instagram.com/choyatech",
+    "https://linkedin.com/company/choyatech",
+  ],
+});
 ---
 
 <!doctype html>
 <html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- SEO -->
+    <title>{title} | choya.tech</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json" set:html={schema} />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title} | choya.tech</title>
   </head>
   <body class="bg-gray-50 text-gray-900 overflow-x-hidden">
     <slot />

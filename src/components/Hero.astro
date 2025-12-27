@@ -31,12 +31,14 @@
           <a
             href="/#planes"
             class="inline-flex justify-center items-center px-8 py-4 bg-gray-900 text-white font-medium rounded-full hover:bg-black transition-all hover:scale-105 shadow-xl hover:shadow-2xl"
+            aria-label="Ver nuestros planes de precios"
           >
             Ver Planes
           </a>
           <a
             href="/#servicios"
             class="inline-flex justify-center items-center px-8 py-4 bg-white text-gray-900 border border-gray-200 font-medium rounded-full hover:bg-gray-50 transition-all"
+            aria-label="Explorar nuestros servicios de marketing y desarrollo"
           >
             Explorar Servicios
           </a>
@@ -53,7 +55,7 @@
                 >
                   <img
                     src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i}`}
-                    alt="User"
+                    alt={`Cliente satisfecho ${i}`}
                   />
                 </div>
               ))
@@ -79,7 +81,7 @@
             <img
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
               class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-700"
-              alt="Happy client"
+              alt="Equipo de estrategia digital trabajando en crecimiento de marca"
             />
             <div
               class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl"
